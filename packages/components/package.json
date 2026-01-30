@@ -17,7 +17,12 @@
   ],
   "scripts": {
     "build": "vite build && tsc --emitDeclarationOnly --outDir dist",
-    "dev": "vite build --watch"
+    "start": "storybook",
+    "_": "",
+    "storybook:fast": "storybook dev -p 6007",
+    "storybook": "storybook dev -p 6006",
+    "storybook:build": "chmod +x ./scripts/generateBuildVersions.sh && ./scripts/generateBuildVersions.sh && storybook build",
+    "storybook:build:full": "chmod +x ./help.sh && ./help.sh build"
   },
   "peerDependencies": {
     "react": ">=18.0.0",
@@ -27,11 +32,20 @@
     "antd": "^5.22.10"
   },
   "devDependencies": {
-    "@types/react": "^19.0.6",
-    "@types/react-dom": "^19.0.3",
+    "@storybook/addon-docs": "^10.2.3",
+    "@storybook/addon-links": "^10.2.3",
+    "@storybook/blocks": "^10.2.3",
+    "@storybook/react": "^10.2.3",
+    "@storybook/react-vite": "^10.2.3",
+    "@storybook/test": "^10.2.3",
+    "@types/node": "^25.1.0",
+    "@types/react": "^19.2.10",
+    "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react-oxc": "^0.4.3",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "oxlint": "^1.42.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "storybook": "^10.2.3",
     "typescript": "^5.7.2",
     "vite": "^8.0.0-beta.11"
   }

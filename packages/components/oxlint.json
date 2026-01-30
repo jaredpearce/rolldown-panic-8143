@@ -1,0 +1,30 @@
+{
+  "rules": {
+    "no-constant-condition": "warn",
+    "no-empty": "warn",
+    "no-prototype-builtins": "off",
+    "no-case-declarations": "warn",
+    "typescript/no-explicit-any": "off",
+    "typescript/no-unused-vars": "warn",
+    "typescript/ban-ts-comment": "warn",
+    "typescript/no-non-null-assertion": "off",
+    "typescript/no-non-null-asserted-optional-chain": "warn",
+    "typescript/no-unsafe-function-type": "warn",
+    "typescript/no-unused-expressions": "warn",
+    "typescript/no-empty-object-type": "warn",
+    "typescript/no-dynamic-delete": "warn",
+    "typescript/no-invalid-void-type": "warn",
+    "typescript/no-empty-function": "warn",
+    "typescript/consistent-type-definitions": "warn",
+    "typescript/consistent-indexed-object-style": "warn",
+    "typescript/consistent-generic-constructors": "warn"
+  },
+  "ignorePatterns": [
+    "build/",
+    "dist/",
+    "vite.config.ts",
+    "vitest.config.ts",
+    "src/__mocks__/",
+    "storybook-static/"
+  ]
+}
